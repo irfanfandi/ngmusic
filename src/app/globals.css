@@ -3,25 +3,126 @@
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+  --burple:#7b34dd
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+.Rectangle {
+  width: 280px;
+  height: 40px;
+  margin: 219.2px 0 15px;
+  padding: 13px 81px 13px 79px;
+  border-radius: 20px;
+  background-color: #fff;
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+::placeholder  {
+  width: 120px;
+  height: 14px;
+  font-family: Roboto;
+  font-size: 12px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 0.43px;
+  color: var(--blue-gray-500);
+}
+
+.Rectangle-button {
+  width: 280px;
+  height: 40px;
+  margin: 15px 0 0;
+  padding: 13px 116px 11px 117px;
+  border-radius: 20px;
+  background-color: rgba(255, 255, 255, 0.2);
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 0.5px;
+  color: #fff;
+}
+
+.Search-result-for {
+  width: 119px;
+  height: 16px;
+  margin: 3px 10px 2px 0;
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 0.5px;
+  color: #334155;
+}
+
+.Search-result {
+  margin: 0 0 0 10px;
+  font-family: Roboto;
+  font-size: 18px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 0.64px;
+  color: var(--burple);
+
+}
+
+.Card-music {
+  width: 340px;
+  height: 123px;
+  padding: 12px 12px 11px 10px;
+  margin-top: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  background-color: #fff;
+}
+
+.Artist-music {
+  margin: 5px 69px 5px 12px;
+  font-family: Roboto;
+  font-size: 10px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 0.36px;
+  color: #334155;
+}
+
+.Title-music{
+  margin: 5px 10px 27px 12px;
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 0.5px;
+  color: #334155;
+}
+
+.Button-load-more{
+width: 240px;
+  height: 34px;
+  margin: 20px 110px 0;
+  border-radius: 17px;
+  background-color: #e2e8f0;
+}
+
+.Chip{
+  width: 45px;
+  height: 20px;
+  align-items: center;
+  padding-left: 8px;
+  margin-top: 5px;
+  margin-left: 10px;
+  border-radius: 10px;
+  background-color: #10b981;
+  color: white;
+  font-size: small;
 }
