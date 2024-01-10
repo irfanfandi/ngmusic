@@ -44,9 +44,11 @@ export default function Page() {
               />
               <div className="flex flex-col">
                 <h6 className="Artist-music">{e.collectionName}</h6>
-                <h6 className="Title-music">{e.trackName}</h6>
+                <h6 className="Title-music">
+                  {e.trackName?.slice(0, 25).concat("...")}
+                </h6>
                 <div className="flex justify-between">
-                  <div className="flex Chip">{e.kind}</div>
+                  <div className="flex Chip px-2">{e.primaryGenreName}</div>
                 </div>
               </div>
             </div>

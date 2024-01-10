@@ -115,11 +115,10 @@ width: 240px;
 }
 
 .Chip{
-  width: 45px;
+  display: flex;
+  minWidth: 45px;
   height: 20px;
   align-items: center;
-  padding-left: 8px;
-  margin-top: 5px;
   margin-left: 10px;
   border-radius: 10px;
   background-color: #10b981;
